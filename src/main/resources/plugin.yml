@@ -1,0 +1,15 @@
+
+main: dev.flowey258.kingdomDraft.KingdomDraft
+api-version: '1.21'
+authors: [ flow258 ]
+
+name: KingdomDraft
+version: '${project.version}'
+description: Automatically drafts new players into one of the 4 Kingdoms.
+
+depend:
+  - PlaceholderAPI
+  - Kingdoms
+
+softdepend:
+  - DiscordSRV

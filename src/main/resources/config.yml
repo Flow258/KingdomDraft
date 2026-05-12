@@ -1,0 +1,32 @@
+# KingdomDraft Configuration
+# ============================================================
+
+discord:
+  enabled: true
+  # Right-click your Discord server icon > Copy Server ID
+  guild-id: "YOUR_GUILD_ID_HERE"
+  kingdom-roles:
+    Vlossaire:  "DISCORD_ROLE_ID_FOR_VLOSSAIRE"
+    Arcnaria:   "DISCORD_ROLE_ID_FOR_ARCNARIA"
+    Hushpierre: "DISCORD_ROLE_ID_FOR_HUSHPIERRE"
+    Slypharis:  "DISCORD_ROLE_ID_FOR_SLYPHARIS"
+
+# Must match exactly what your Kingdoms plugin uses as the kingdom name
+kingdoms:
+  - Vlossaire
+  - Arcnaria
+  - Hushpierre
+  - Slypharis
+
+# Delay (ticks) after PlayerJoin before checking kingdom status (40 = 2s)
+check-delay: 40
+
+# Delay (ticks) after running join command before sending message (20 = 1s)
+message-delay: 20
+
+# Block players from creating their own kingdoms
+# This cancels /k create and /k admin create for non-admins
+block-kingdom-creation: true
+
+# Permission that bypasses the kingdom creation block (give to admins only)
+bypass-permission: "kingdomdraft.bypass"
